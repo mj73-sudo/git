@@ -16,7 +16,7 @@
 
   onMounted(async ()=>{
     await strategystore.fetchItems();
-    await dashboardStore.getOverview();
+    await  dashboardStore.getOverview();
     await dashboardStore.getTopStrategy();
     await listSgnalStore.getListSignal();
 

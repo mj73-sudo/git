@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Shabnam';
+  src: url('assets/fonts/Shabnam.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('./assets/fonts/Shabnam-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html[dir="rtl"] {
+  --v-font-family: 'Shabnam', sans-serif;
+}
+body,
+.v-application {
+  font-family: 'Shabnam', sans-serif !important;
+}
+
+* {
+  font-family: inherit !important;
+}
+$text-font: 'Shabnam', sans-serif;
+$h6-size: 1.3rem;
+
+.text-h6-bold {
+  font-size: $h6-size !important;
+  font-weight: bold !important;
+  font-family: $text-font;
+  line-height: 3;
+}
+$spacing-unit: 8px;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.box {
+  @include flex-center;
+  margin-top: $spacing-unit * 2; // 16px
+  align-self: center;
+}
+.box-center{
+  @include flex-center
+}
+.dialog-border {
+  border: 3px solid rgba(255, 255, 255, 0.2); /* border color */
+  border-radius: 12px;                         /* rounded corners */
+  padding: 16px;                                /* inner spacing */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  /* optional shadow */
+}
+
+body,
+.v-application {
+  font-family: 'Shabnam', sans-serif !important;
+}
+.alert-text {
+  color: black;
+  font-family: $text-font;
+}
+
+.alert-text--xs { font-size: 5px; }
+.alert-text--sm { font-size: 12px; }
+.alert-text--md { font-size: 16px; }
+.alert-text--lg { font-size: 20px; }
+.alert-text--xl { font-size: 24px; }
+
+
+.icon-circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.icon-circle.sm {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-circle.md {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-circle.lg {
+  width: 70px;
+  height: 70px;
+}
+.icon-circle.primary {
+  background: #1976d2;
+}
+
+.icon-circle.error {
+  background: #d32f2f;
+}
+
+.icon-circle.success {
+  background: #4caf50;
+}
+
+.icon-circle.orange {
+  background: orange;
+}
+
+/* فعال‌سازی hover برای آیتم‌های داخل v-list-group */
+.v-list-group .v-list-item {
+  pointer-events: auto !important;
+}
+
+/* استایل hover */
+.v-list-item:hover {
+  background-color: rgba(255,255,255,0.08) !important;
+  border-radius: 8px !important;
+}

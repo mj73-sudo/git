@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-
+<span>dsds</span>
 </template>
 
 <style scoped lang="scss">

@@ -11,7 +11,7 @@
 
   const dashboardStore=useDashboardStore();
   const authstore= AuthStore();
-  const listSgnalStore=ListSignalStore();
+  const  listSgnalStore=ListSignalStore();
   const  strategystore = useStrategyStore();
 
   onMounted(async ()=>{
